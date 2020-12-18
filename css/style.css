@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;800&display=swap');
+
+:root{
+	--contenido: #898989;
+	--negro: #282d33;
+	--footer:  #30363d;
+	--fondo-gris: #f5f5f5;
+	--blanco: white;
+	--rojo: #f3727d;
+}
+
+body{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 15px;
+	color: #777;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Catamaran', sans-serif;
+}
+
+section{
+	padding: 60px 0px;
+}
+
+header{
+	position: relative;
+	background-color: #f9f9f9;
+	width: 100%;
+	top:0;
+}
+
+.fondo{
+	background-color: var(--fondo-gris);
+}
+
+p{
+	color: var(--contenido);
+	font-size: 20px;
+}
+
+#hero a{
+	background-color: var(--negro);
+	color: var(--blanco);
+	border-radius: 25%;
+	padding: 10px 15px;
+}
+
+#hero a:hover{
+	text-decoration: none;
+	background-color: var(--rojo);
+}
+
+#hero h1{
+	font-size: 80px;
+	color: var(--negro);
+	font-weight: 700;
+}
+
+#cta-products{
+	padding: 200px 0px;
+	color: var(--blanco);
+	background-image: url("../img/product-parallax.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+	margin-top: 30px;
+}
+
+#cta-products h1{
+	font-size: 100px;
+	font-weight: 800;
+}
+
+#cta-products h3{
+	font-weight: 500;
+}
+
+#cta-products p{
+	margin: 0px 200px;
+}
+
+#info-product h2{
+	font-weight: 800;
+	color: var(--negro);
+}
+
+#info-product a{
+	color: var(--negro);
+	font-weight: 800;
+}
+
+#info-product a:hover,#cta-flexibility a:hover{
+	color: var(--rojo);
+	text-decoration: none;
+}
+
+#cta-flexibility{
+	padding: 200px 0px;
+	color: var(--blanco);
+	background-image: url("../img/product-parallax-2.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: left;
+	background-attachment: fixed;
+	margin-top: 30px;
+}
+
+#cta-flexibility h2{
+	font-weight: 600;
+}
+
+#cta-flexibility p{
+	margin-right: 600px;
+}
+
+#cta-flexibility a{
+	color: var(--blanco);
+	font-weight: 600;
+}
+
+.capa-relative{
+	position: relative;
+	overflow: hidden;
+}
+.capa-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.45);
+	z-index: 100;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.capa-relative:hover .capa-overlay{
+	opacity: 1;
+	transition: all 1s ease-in-out;
+}
+
+#products i{
+	margin: 20px 0px;
+}
+
+#products h6{
+	font-weight: 800;
+	font-size: 20px;
+}
+
+#products p{
+	font-size: 15px;
+}
+
+#clients {
+	background-color: var(--fondo-gris);
+}
+
+footer{
+	background-color: #30363d;
+	padding: 30px;
+	color: #999;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 600;
+}
+footer p{
+	margin-bottom: 0;
+}
+
+
+
+@media (max-width:600px){
+	article{
+		margin: 10px 0px;
+	}
+	
+	#cta-products p{
+		margin-right: 0px;
+
+	}
+	
+	#cta-flexibility p{
+		margin-right: 0px;
+	}
+	
+	
+	
+}
+
